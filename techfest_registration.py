@@ -24,7 +24,6 @@ for name, track in participants.items():
     counter += 1
 
 track_count = {}
-
 for track in participants.values():
     track_count[track] = track_count.get(track,0) + 1
 
@@ -35,3 +34,9 @@ for track in unique_tracks:
     print(f"{counter}. {track}")
     counter += 1
 
+
+# duplicate_names = {}
+
+print("\nParticipants per track:")
+for track, count in track_count.items():
+    print(f"{track}: {count}")
