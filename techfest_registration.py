@@ -21,15 +21,15 @@ print("\nRegistered Participants:")
 for i, participant in enumerate(participants):
     print(f"{i+1}. {participant['name']} - {participant['track']}")
 
-# track_count = {}
-# for participant in participants:
-#     track = participant['track']
-#     track_count[track] = track_count.get(track, 0) + 1
-#
-# unique_tracks = {track for track, count in track_count.items()}
-# print("\nTracks offered in this event:")
-# for track in unique_tracks:
-#     print(track)
+track_count = {}
+for participant in participants:
+    track = participant['track']
+    track_count[track] = track_count.get(track, 0) + 1
+
+unique_tracks = {track for track, count in track_count.items()}
+print("\nTracks offered in this event:")
+for track in unique_tracks:
+    print(track)
 #
 # name_count = {}
 # for participant in participants:
