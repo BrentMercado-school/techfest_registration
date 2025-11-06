@@ -22,3 +22,16 @@ counter = 1
 for name, track in participants.items():
     print(f"{counter}. {name} - {track}")
     counter += 1
+
+track_count = {}
+
+for track in participants.values():
+    track_count[track] = track_count.get(track,0) + 1
+
+unique_tracks = {track for track, count in track_count.items()}
+print("\nTracks offered in this event:")
+counter = 1
+for track in unique_tracks:
+    print(f"{counter}. {track}")
+    counter += 1
+
