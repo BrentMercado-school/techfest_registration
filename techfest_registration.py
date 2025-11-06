@@ -10,3 +10,15 @@ while True:
     except ValueError:
         print("Please enter a valid number.\n")
         continue
+
+participants = {}
+for i in range(number_participant):
+    name = input("Enter participant name: ")
+    track = input("Enter chosen track: ")
+    participants[name] = track
+
+print("\nRegistered Participants:")
+counter = 1
+for name, track in participants.items():
+    print(f"{counter}. {name} - {track}")
+    counter += 1
