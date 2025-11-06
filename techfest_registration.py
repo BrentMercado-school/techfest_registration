@@ -46,7 +46,7 @@ for name in duplicated_names:
     print(name)
 
 #tracking of number of participants per track
-# print("\nParticipants per track:")
-# for track, count in track_count.items():
-#     print(f"{track}: {count}")
+print("\nParticipants per track:")
+for track, count in track_count.items():
+    print(f"{track}: {count}")
 
