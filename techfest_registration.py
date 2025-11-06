@@ -44,12 +44,12 @@ for participant in participants:
     name_count[name] = name_count.get(name, 0) + 1
 
 duplicated_names = {name for name, count in name_count.items() if count > 1}
-# if len(duplicated_names) < 1:
-#     print("\nNo duplicate names.")
-# else:
-#     print("\nDuplicated names found:")
-#     for name in duplicated_names:
-#         print(name)
+if len(duplicated_names) < 1:
+    print("\nNo duplicate names.")
+else:
+    print("\nDuplicated names found:")
+    for name in duplicated_names:
+        print(name)
 
 #tracking of number of participants per track
 print("\nParticipants per track:")
